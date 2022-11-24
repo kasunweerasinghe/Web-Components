@@ -10,7 +10,7 @@ created by kasunrachintha on 11/24/22
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Carousel</title>
+    <title>Carousel Component</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         /*
@@ -37,10 +37,44 @@ created by kasunrachintha on 11/24/22
             line-height: 1;
         }
 
+        .carousel{
+            background-color: #087f5b;
+        }
+
+        img{
+            height: 200px;
+
+        }
 
     </style>
 </head>
 <body>
+
+<div class="carousel">
+    <img alt="maria img" src="maria.jpg">
+    <blockquote class="testimonial">
+        <p class="testimonial-text">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia nesciunt aliquid
+            ex atque quibusdam. Rerum
+            officia unde suscipit quo sunt hic illo fugit."</p>
+        <p class="testimonial-author">Maria de Almeida</p>
+        <p class="testimonial-job">Senior Product Manager at EDP Comercial</p>
+    </blockquote>
+
+    <button class="btn">
+        <svg class="btn-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+             xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.75 19.5L8.25 12l7.5-7.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+    <button class="btn">
+        <svg class="btn-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+             xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.25 4.5l7.5 7.5-7.5 7.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+    </button>
+</div>
 
 
 </body>
