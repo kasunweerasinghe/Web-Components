@@ -43,8 +43,26 @@ created by kasunrachintha on 11/24/22
 
         menu {
             background-color: #7048e8;
-            color: #ffffff;
             grid-column: 2 / -1;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 0 40px;
+        }
+
+        button{
+            font-size: 16px;
+            background-color: #5f3dc4;
+            border: none;
+            cursor: pointer;
+            color: white;
+            padding: 8px 12px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        button:last-child{
+            background-color: #d6336c;
         }
 
         section {
@@ -60,7 +78,13 @@ created by kasunrachintha on 11/24/22
 <body>
 
 <nav>Nav</nav>
-<menu>Menu</menu>
+<menu>
+    <button>New</button>
+    <button>Replay</button>
+    <button>Forward</button>
+    <button>Mark unread</button>
+    <button>Trash</button>
+</menu>
 <section>Inbox</section>
 <main>Email View</main>
 <aside>Additional Info</aside>
