@@ -40,10 +40,19 @@ created by kasunrachintha on 11/24/22
         .accordion {
             width: 700px;
             margin: 100px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
         }
 
         .item {
-
+            box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+            padding: 24px;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            column-gap: 24px;
+            row-gap: 32px;
+            align-items: center;
         }
 
         .number, .text {
@@ -52,8 +61,8 @@ created by kasunrachintha on 11/24/22
             color: #087f5b;
         }
 
-        .text {
-
+        .number {
+            color: #ced4da;
         }
 
         .icon {
@@ -63,15 +72,16 @@ created by kasunrachintha on 11/24/22
         }
 
         .hidden-box {
-
+            grid-column: 2;
+            display: none;
         }
 
-        .hidden-box p{
+        .hidden-box p {
             line-height: 1.6;
             margin-bottom: 24px;
         }
 
-        .hidden-box ul{
+        .hidden-box ul {
             color: #868e96;
             margin-left: 20px;
             display: flex;
@@ -80,10 +90,13 @@ created by kasunrachintha on 11/24/22
 
         }
 
-        /*.hidden-box li{*/
-        /*    margin-bottom: 12px;*/
-        /*}*/
+       .open{
+           border-top: 4px solid #087f5b;
+       }
 
+       .open .hidden-box{
+           display: block;
+       }
 
 
     </style>
@@ -93,6 +106,30 @@ created by kasunrachintha on 11/24/22
 <div class="accordion">
 
     <div class="item">
+        <p class="number">01</p>
+        <p class="text">Where are these chairs assembled?</p>
+        <svg class="icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+             xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.5 8.25l-7.5 7.5-7.5-7.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+        <div class="hidden-box">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores, aspernatur at commodi
+                dicta doloribus eos eveniet id itaque maxime nihil pariatur perspiciatis porro quasi quidem quisquam
+                sapiente
+            </p>
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                <li>Accusamus architecto dolorem dolores dolorum</li>
+                <li>Culpa quos sed sunt! Commodi distinctio</li>
+                <li>doloremque explicabo nobis obcaecati repellendus!</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="item open">
         <p class="number">02</p>
         <p class="text">How lo gdo i have to return my chair?</p>
         <svg class="icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
@@ -103,10 +140,32 @@ created by kasunrachintha on 11/24/22
         <div class="hidden-box">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores, aspernatur at commodi
-                dicta
-                doloribus eos eveniet id itaque maxime nihil pariatur perspiciatis porro quasi quidem quisquam sapiente
-                sunt
-                temporibus.
+                dicta doloribus eos eveniet id itaque maxime nihil pariatur perspiciatis porro quasi quidem quisquam
+                sapiente
+            </p>
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                <li>Accusamus architecto dolorem dolores dolorum</li>
+                <li>Culpa quos sed sunt! Commodi distinctio</li>
+                <li>doloremque explicabo nobis obcaecati repellendus!</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="item">
+        <p class="number">03</p>
+        <p class="text">Do you ship to countries outside the EU?</p>
+        <svg class="icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+             xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.5 8.25l-7.5 7.5-7.5-7.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+        <div class="hidden-box">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores, aspernatur at commodi
+                dicta doloribus eos eveniet id itaque maxime nihil pariatur perspiciatis porro quasi quidem quisquam
+                sapiente
             </p>
             <ul>
                 <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
