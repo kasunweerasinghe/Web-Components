@@ -16,9 +16,30 @@ created by kasunrachintha on 11/24/22
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600:700&display=swap" rel="stylesheet">
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         html {
             font-family: 'Rubik', sans-serif;
             color: #444444;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 1200px;
+
+        }
+
+        header {
+            height: 100vh;
+            position: relative;
+
+            background-image: url("hero.jpg");
+            background-size: cover;
+            color: #ffffff;
         }
 
         nav {
@@ -26,11 +47,27 @@ created by kasunrachintha on 11/24/22
             font-weight: 700;
             display: flex;
             justify-content: space-between;
+
+        }
+
+        .header-container {
+            width: 1200px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            /*text-align: center;*/
+        }
+
+        .header-container-inner{
+            width: 50%;
+
         }
 
         h1 {
             font-size: 52px;
             margin-bottom: 32px;
+            line-height: 1.05;
         }
 
         p {
@@ -47,7 +84,17 @@ created by kasunrachintha on 11/24/22
             text-decoration: none;
             display: inline-block;
             padding: 16px 32px;
-            border-radius: 9px; ;
+            border-radius: 9px;;
+        }
+
+        h2 {
+            font-size: 44px;
+            margin-bottom: 48px;
+        }
+
+        section {
+            padding: 96px 0;
+            background-color: #f7f7f7;
         }
 
     </style>
@@ -55,21 +102,23 @@ created by kasunrachintha on 11/24/22
 <body>
 
 <header>
-    <nav>
+    <nav class="container">
         <div>LOGO</div>
         <div>NAVIGATION</div>
     </nav>
 
-    <div>
-        <h1>A healthy meal delivered to your door, every single day</h1>
-        <p>The smart 365-days-per-year food subscription that
-            will make you eat healthy again. Tailored to your personal tastes and nutritional needs</p>
-        <a class="btn" href="#">Start eating well</a>
+    <div class="header-container ">
+        <div class="header-container-inner">
+            <h1>A healthy meal delivered to your door, every single day</h1>
+            <p>The smart 365-days-per-year food subscription that
+                will make you eat healthy again. Tailored to your personal tastes and nutritional needs</p>
+            <a class="btn" href="#">Start eating well</a>
+        </div>
     </div>
 </header>
 
 <section>
-    <div>
+    <div class="container">
         <h2>Some random heading</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, amet animi aperiam commodi, dicta dolores
             eveniet libero nam porro quae quasi quis saepe ut voluptas voluptatibus? Consequuntur corporis perspiciatis
