@@ -43,6 +43,7 @@ created by kasunrachintha on 11/24/22
             background-color: #087f5b;
             padding: 32px;
             padding-left: 86px;
+            padding-right: 48px;
             border-radius: 8px;
 
             display: flex;
@@ -122,8 +123,11 @@ created by kasunrachintha on 11/24/22
 
         .dots {
             position: absolute;
-
-
+            left: 50%;
+            bottom: 0;
+            transform: translate(-50%, 32px);
+            display: flex;
+            gap: 12px;
         }
 
         .dot {
@@ -133,6 +137,10 @@ created by kasunrachintha on 11/24/22
             border: 2px solid #087f5b;
             border-radius: 50%;
             cursor: pointer;
+        }
+
+        .dot--fill{
+            background-color: #087f5b;
         }
 
     </style>
@@ -164,7 +172,7 @@ created by kasunrachintha on 11/24/22
 
     </button>
     <div class="dots">
-        <button class="dot">&nbsp;</button>
+        <button class="dot dot--fill">&nbsp;</button>
         <button class="dot">&nbsp;</button>
         <button class="dot">&nbsp;</button>
         <button class="dot">&nbsp;</button>
